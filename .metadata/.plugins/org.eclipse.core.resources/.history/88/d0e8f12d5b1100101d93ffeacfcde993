@@ -1,0 +1,11 @@
+package leetCode;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(teste(0));
+	}
+	public static String teste(int num) {
+		String [] str_Num = String.valueOf(num).split("");
+		return str_Num;
+	}
+}

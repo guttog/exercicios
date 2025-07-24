@@ -1,0 +1,13 @@
+package leetCode;
+import java.util.Arrays;
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(teste(12356));
+	}
+	public static String teste(int num) {
+		String [] str_Num = String.valueOf(num).split("");
+		return str_Num.toString();
+	}
+}

@@ -1,0 +1,40 @@
+package gameAdivinhacao;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Random random = new Random();
+		Scanner scan = new Scanner(System.in);
+		int tentativas = 0;
+		
+		int numberAdvn = random.nextInt(100)+1;
+		
+		System.out.println("Adivinhe o numero!");
+		int answ = scan.nextInt();
+		
+		while (answ != numberAdvn) {
+			tentativas++;
+			if(answ < numberAdvn) {
+				System.out.println("É maior que "+ answ +"!Tente de novo.");
+				
+			}else{
+				System.out.println("É menor que "+ answ +"!Tente de novo.");
+			}
+			
+			
+			answ = scan.nextInt();
+			System.out.println(" ");
+			System.out.println("Tentativas: "+tentativas);
+		}
+		
+		tentativas++;
+		System.out.println("Acertou em cheio!");
+		System.out.println("Seu numero: " + answ);
+		System.out.println("Numero gerado: " + numberAdvn);
+		System.out.println("Tentativas: "+tentativas);	
+		
+		scan.close();	
+	}
+}

@@ -1,0 +1,49 @@
+package leetCode;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+
+public class Main {
+	
+	static LinkedList<Integer> myTest() {
+	LinkedList<Integer> l1 = new LinkedList<Integer>();	
+	LinkedList<Integer> l2 = new LinkedList<Integer>();
+	
+	l1.add(2);
+	l1.add(4);
+	l1.add(3);
+	
+	int first = l1.getFirst();
+	int last = l1.getLast();
+	
+	l1.removeFirst();
+	l1.addFirst(last);
+	
+	l1.removeLast();
+	l1.addLast(first);
+	
+	/* ------------------------ */
+	
+	l2.add(5);
+	l2.add(6);
+	l2.add(4);
+
+	int first_l2 = l2.getFirst();
+	int last_l2 = l2.getLast();
+	
+	l2.removeFirst();
+	l2.addFirst(last_l2);
+	
+	l2.removeLast();
+	l2.addLast(first_l2);
+	
+		return l1;
+		}
+	
+	public static void main(String[] args) {
+		System.out.println(myTest());
+	
+
+	}
+}

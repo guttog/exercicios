@@ -1,0 +1,17 @@
+package leetCode;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+	
+	static ArrayList<int> myTest() {
+		return;
+		}
+	
+	public static void main(String[] args) {
+		System.out.println(myTest());
+	
+
+	}
+}

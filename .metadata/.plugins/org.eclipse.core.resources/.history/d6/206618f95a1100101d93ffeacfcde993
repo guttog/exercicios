@@ -1,0 +1,15 @@
+package leetCode;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println(teste(1));
+	}
+	public static String teste(int num) {
+		if(num == 1) {
+			return "Olá";
+		}
+		else{
+			return "Nada!";
+		}
+	}
+}

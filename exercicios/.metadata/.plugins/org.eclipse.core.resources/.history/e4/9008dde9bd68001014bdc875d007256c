@@ -1,0 +1,28 @@
+package testeVagaJrGPT;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Digite um numero:");
+		int num = scan.nextInt();
+			if(num == 0) {
+				System.out.print("O numéro deve ser maior que '0', tente novamente:");
+				num = scan.nextInt();
+			}
+			
+			
+		if(num % 3 == 0 || num % 5 == 0) {
+			
+		}
+			
+		
+		
+		System.out.print("Seu numero: "+ num);
+
+	}
+
+}

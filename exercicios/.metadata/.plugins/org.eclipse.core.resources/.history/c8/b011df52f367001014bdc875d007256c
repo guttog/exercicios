@@ -1,0 +1,9 @@
+package gameAdivinhacao;
+
+import java.util.Random;
+
+public class Main {
+	public static void main(String[] args) {
+		Random numB = new Random(100);
+	}
+}

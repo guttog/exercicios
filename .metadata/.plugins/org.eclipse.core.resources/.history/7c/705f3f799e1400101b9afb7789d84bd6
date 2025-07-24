@@ -1,0 +1,13 @@
+package leetCode;
+import java.util.Arrays;
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println();
+	
+	public staic int teste(ArrayList<int> num) {
+		return 2;
+		}
+	}
+}

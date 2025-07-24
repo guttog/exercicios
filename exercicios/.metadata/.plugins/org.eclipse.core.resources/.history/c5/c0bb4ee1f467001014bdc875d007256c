@@ -1,0 +1,29 @@
+package gameAdivinhacao;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Random random = new Random();
+		Scanner scan = new Scanner(System.in);
+		
+		int numberAdvn = random.nextInt(100);
+		
+		System.out.println("Adivinhe o numero!");
+		int asnw = scan.nextInt();
+		
+		while (asnw != numberAdvn) {
+			if(asnw != numberAdvn) {
+				System.out.println("Errou!Tente de novo.");
+				int asnw = scan.nextInt();
+			}
+		}
+		
+		//System.out.println("Seu numero: " + asnw);
+		//System.out.print("Numero de verdade: " + numberAdvn);
+		
+		
+		
+	}
+}
